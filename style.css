@@ -176,6 +176,28 @@ section {
 .home .image-slider img:hover {
     transform: translateY(-2rem);
 }
+image-slider-container {
+    display: flex; /* or grid */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    justify-content: center;
+}
+
+.image-slider {
+    /* You may need to adjust styles for individual images if necessary */
+    display: flex; /* or grid */
+    gap: 20px; /* Adjust the gap between images as needed */
+    flex-wrap: nowrap; /* Prevent wrapping of images to new lines */
+    max-width: 100%; /* Ensure the images don't exceed container width */
+    justify-content: center;
+}
+
+.image-slider img {
+    /* Additional styles for individual images */
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    align-self: center;
+}
+
 
 /* ABOUT */
 
